@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Zara Designs</title>
+  <style>
+    :root {
+      --primary: #f8ad90;
+      --secondary: #f8f1ef;
+      --accent: #0074d9;
+      --text-dark: #222;
+      --text-light: #fff;
+      --tile-radius: 1.25rem;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--secondary);
+      color: var(--text-dark);
+      padding: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .block {
+      background-color: var(--primary);
+      border-radius: var(--tile-radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .block:hover {
+      transform: translateY(-4px);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary);
+      padding: 2rem;
+      margin-bottom: 3rem;
+      border-radius: var(--tile-radius);
+    }
+
+    .header .left a {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--text-dark);
+    }
+
+    .header .right {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .header .right a {
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .header .right a:hover {
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-intro {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .mission-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--primary);
+      border-radius: var(--tile-radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header .right {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="header block">
+    <div class="left"><a href="index.html">Zara Designs</a></div>
+    <div class="right">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </section>
+
+  <!-- About Introduction -->
+  <div class="block">
+    <h1>About Us</h1>
+    <img src="./image/five.jpg" alt="Chizaram Onuorah" style="width: 20rem; border-radius: var(--tile-radius); margin-bottom: 1rem;">
+    <p class="about-intro">
+      At Zara Designs, we’re passionate about helping creators and businesses express their identity through digital
+      branding and design. Founded by Chizaram Onuorah, we believe in the power of visual storytelling to connect brands
+      with their audiences in meaningful ways.
+    </p>
+  </div>
+
+  <!-- Mission, Vision, Values -->
+  <h2 class="section-title">What We Stand For</h2>
+  <section class="mission-section">
+    <div class="card">
+      <h2>Our Mission</h2>
+      <p>
+        To deliver personalized, impactful branding and design solutions that empower artists and entrepreneurs to
+        achieve their goals.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Our Vision</h2>
+      <p>
+        To be the go-to creative agency for authentic, artistic expression in the digital space — where design meets
+        strategy.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Core Values</h2>
+      <p>
+        Creativity. Simplicity. Trust. We believe design should be bold, clear, and built on strong client
+        collaboration.
+      </p>
+    </div>
+  </section>
+</body>
+
+</html>
